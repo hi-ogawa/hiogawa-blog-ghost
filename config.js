@@ -14,14 +14,6 @@ config = {
         url: 'http://hiogawa-blog.herokuapp.com',
         mail: {},
         database: {
-            client: 'sqlite3',
-            connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
-        },
-
-        database: {
             client: 'postgres',
             connection: {
                 host: process.env.POSTGRES_HOST,
