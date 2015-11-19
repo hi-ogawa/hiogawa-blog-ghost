@@ -54,11 +54,13 @@
 <script src="{{asset "vendor.js" ghost="true" minifyInProduction="true"}}"></script>
 <script src="{{asset "ghost.js" ghost="true" minifyInProduction="true"}}"></script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 <script type="text/javascript">
   setInterval(function(){
-   MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-  }, 3000)
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    PR.prettyPrint();
+  }, 1000)
 </script>
 </body>
 </html>
