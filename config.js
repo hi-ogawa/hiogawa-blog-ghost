@@ -12,7 +12,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.hiogawa.net',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: process.env.MAILGUN_USER,
+                    pass: process.env.MAILGUN_PASS
+                }
+            }
+        },
         database: {
             client: 'postgres',
             connection: {
