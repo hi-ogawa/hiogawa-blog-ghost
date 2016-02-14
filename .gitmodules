@@ -1,0 +1,3 @@
+[submodule "content/themes/mnml-ghost-theme"]
+	path = content/themes/mnml-ghost-theme
+	url = git@github.com:curiositry/mnml-ghost-theme.git
